@@ -42,6 +42,7 @@
     border-radius: 50%;
     box-shadow: 0 0 0 10px rgba(255, 166, 0, 0.44), 0 0 50px orange, 0 0 100px orange;
     animation: animate calc(300s/var(--i)) linear infinite;
+    
 }
 
 @keyframes degrade-animado {
