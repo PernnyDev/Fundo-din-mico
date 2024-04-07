@@ -30,6 +30,7 @@
     background-image: linear-gradient(to left, rgb(93, 187, 235), orange, rgb(108, 232, 108));
     background-size: 500% 100%;
     animation: degrade-animado 15s infinite alternate;
+    filter: blur(100%);
 }
 
 
@@ -40,7 +41,7 @@
     margin: 0 4px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px rgba(255, 166, 0, 0.44), 0 0 50px orange, 0 0 100px orange;
-    animation: animate calc(150s/var(--i)) linear infinite;
+    animation: animate calc(300s/var(--i)) linear infinite;
 }
 
 @keyframes degrade-animado {
