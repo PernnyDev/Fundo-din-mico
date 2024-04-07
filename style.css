@@ -1,13 +1,13 @@
 * {
     margin: 0;
-    pedding: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
+/* body {
     main-height: 100vh;
     background: #0c192c;
-}
+} */
 
 .container {
     position: relative;
@@ -22,14 +22,35 @@ body {
     display: flex;
 }
 
+.box-degrade {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgb(93, 187, 235), orange, rgb(108, 232, 108));
+    background-size: 500% 100%;
+    animation: degrade-animado 15s infinite alternate;
+}
+
+
 .bolhas span {
     width: 30px;
     height: 30px;
-    background: #e5ff00;
+    background: orange;
     margin: 0 4px;
     border-radius: 50%;
-    box-shadow: 0 0 0 10px #e5ff0044, 0 0 50px #e5ff00, 0 0 100px #e5ff00;
+    box-shadow: 0 0 0 10px rgba(255, 166, 0, 0.44), 0 0 50px orange, 0 0 100px orange;
     animation: animate calc(150s/var(--i)) linear infinite;
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
 }
 
 @keyframes animate {
@@ -43,10 +64,10 @@ body {
 }
 
 .bolhas span:nth-of-type(even){
-    background: #2dc3ff;
-    box-shadow: 0 0 0 10px #2dc3ff44,
-     0 0 50px #2dc3ff,
-      0 0 100px #2dc3ff;
+    background:rgb(108, 232, 108);
+    box-shadow: 0 0 0 10px rgb(108, 232, 108,0.44),
+     0 0 50px rgb(108, 232, 108),
+      0 0 100px rgb(108, 232, 108);
 
 }
 
